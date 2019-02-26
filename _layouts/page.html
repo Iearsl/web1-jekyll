@@ -37,6 +37,11 @@
         <h1>{{ page.title }}</h1>
 		
 		{{ content }}
+		
+		our cat: {{page.cat}}
+		}% if page.cat %}
+			This page has a cat: {{page.cat}}
+		{%endif%}
 
 		<hr>
 
