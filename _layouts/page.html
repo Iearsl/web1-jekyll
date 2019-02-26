@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Title goes here</title>
 	<meta name="description" content="{{ page.description }}">
-	
+
 	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Load styles -->
 	<!-- For production, combine all of the stylesheets -->
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/sitewide.css">
-	
+
 	<!-- Webfonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
@@ -33,11 +33,11 @@
 				<li><a href="{{ site.baseurl }}/catpresident.html">Cat President</a></li>
 			</ul>
 		</nav>
-		
+
         <h1>{{ page.title }}</h1>
-		
+
 		{{ content }}
-		
+
 		our cat: {{page.cat}}
 		}% if page.cat =="rodent"%}
 			This page has a cat: {{page.cat}}
@@ -45,13 +45,13 @@
 
 		<hr>
 
-		<p>Today's color is: {{ page.color }}</p>
+		<p>Today's color isnt: {{ page.color }}</p>
 
         {% if page.date %}
     		<p>Updated {{ page.date | date: "%A, %B %-d, %Y" }}</p>
         {% endif %}
-		
+
 	</div><!-- end container -->
-	
+
 </body>
 </html>
